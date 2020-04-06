@@ -31,3 +31,7 @@ python3 main.py
 
 Run: docker-compose -f stack.yml down
 
+# I have a CSV or comparable to import
+
+I added a data mount that mounts the folder /data into /data in the mysql database so you can place your files there and run them on the container
+
