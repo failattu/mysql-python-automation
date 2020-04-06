@@ -7,7 +7,7 @@ pip3 install docker-compose
 
 change password in the stack.yml file
 
-docker-compose up -f stack.yml -d
+docker-compose -f stack.yml up -d
 
 Admin panel available at http://localhost:8080
 
@@ -18,4 +18,16 @@ To run mysql commands use command: docker exec -it mysql-container_db_1  bash
 
 In bash run command mysql -p 
 
+
+#How to use my main.py
+
+Change the first 4 values to enable the host, username, password and database to what you need.
+
+pip3 install mysql.connector
+
+python3 main.py
+
+#How to reset the whole environment
+
+Run: docker-compose -f stack.yml down
 
