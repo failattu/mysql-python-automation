@@ -37,3 +37,12 @@ mydb.commit()
 
 print(mycursor.rowcount, "record inserted.")
 
+mycursor.execute("SELECT * FROM customers")
+
+myresult = mycursor.fetchall()
+
+for row in myresult:
+  print(row)
+
+
+
